@@ -274,6 +274,7 @@ DEPENDENCIES
   pg
   puma (~> 3.11)
   rails (~> 5.2.1)
+  redis (~> 4.0)
   rest-client
   rspec-rails (~> 3.5)
   rubocop

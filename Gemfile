@@ -82,3 +82,6 @@ gem 'sidekiq'
 
 # Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.
 gem "rest-client"
+
+# A Ruby client library for Redis
+gem "redis", "~> 4.0"
