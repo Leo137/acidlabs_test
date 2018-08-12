@@ -1,0 +1,66 @@
+// Place all the styles related to the forecasts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background: url(../cloud_background_big.jpg);
+  background-size: cover;  
+  background-position: center;
+
+  height: 100%;
+  padding-bottom: 10em;
+}
+
+footer {
+  background: #31344d;
+  padding-top: 1rem;
+  color: #fff;
+
+  position: absolute;
+  height: 10em;
+  clear: both;
+  padding-top: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) and (min-height: 1000px) {
+  footer {
+    bottom: 0;
+  }
+}
+
+.container {
+  padding: 20px;
+}
+
+.forecast-title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.forecast-item-container {
+  padding: 12px;  
+}
+
+.forecast-item-body {
+  background: #30334c;
+  border-radius: 4px;
+  padding: 40px;
+  box-shadow: 3px 3px 15px 0px rgba(87,87,87,1);
+  color: #fff;
+}
+
+.forecast-item-body h2 {
+  position: relative;
+  left: -20px;
+  top: -20px;
+}
+
+.forecast-item-property {
+  font-size: 20px;
+}

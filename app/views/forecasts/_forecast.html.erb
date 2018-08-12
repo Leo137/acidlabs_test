@@ -1,0 +1,7 @@
+<div class='forecast-item-container col-md-6 col-xs-12'>
+  <div class='forecast-item-body'>
+    <h2><%= forecast[:name] %></h2>
+    <div class='forecast-item-property text-right'><%= forecast[:temperature] %> F°</div>
+    <div class='forecast-item-property text-right'><%= DateTime.now.in_time_zone(forecast[:timezone]).strftime('%H:%M:%S') %></div>
+  </div>
+</div>

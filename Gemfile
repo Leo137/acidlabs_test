@@ -85,3 +85,9 @@ gem "rest-client"
 
 # A Ruby client library for Redis
 gem "redis", "~> 4.0"
+
+# Bootstrap 4 Ruby Gem for Rails / Sprockets and Compass.
+gem 'bootstrap', '~> 4.1.3'
+
+# A gem to automate using jQuery with Rails
+gem 'jquery-rails'
