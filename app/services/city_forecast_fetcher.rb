@@ -13,9 +13,15 @@ class CityForecastFetcher
     cities.each do |city|
       process_city(city)
     end
+
+    broadcast
   end
 
   private
+
+  def broadcast
+    ForecastBroadcastWorker.perform_async
+  end
 
   def process_city(city)
     return unless result = get_city_result(city)
