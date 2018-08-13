@@ -20,7 +20,7 @@ class CityForecastFetcher
   private
 
   def broadcast
-    ForecastBroadcastWorker.perform_in(1.minute)
+    ForecastBroadcastWorker.perform_async
   end
 
   def process_city(city)

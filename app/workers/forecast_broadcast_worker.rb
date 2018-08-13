@@ -3,6 +3,7 @@ class ForecastBroadcastWorker
 
   def perform(*args)
     # Get ForecastsController
+    Rails.cache.fetch('cities') and sleep(5)
     forecasts = CityForecastRetriever.new.get_forecasts
     # Broadcast
     ActionCable.server.broadcast "forecast", { 
