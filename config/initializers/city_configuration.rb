@@ -1,3 +1,5 @@
+return if (File.basename($0) == 'rake')
+
 # Santiago (CL), Zurich (CH), Auckland (NZ), Sydney (AU), Londres (UK), Georgia (USA)
 cities = [
   { name: 'Santiago', country_code: 'CL', lattitude: -33.447487, longitude: -70.673676 },
