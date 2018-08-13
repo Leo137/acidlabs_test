@@ -1,4 +1,5 @@
-return if (File.basename($0) == 'rake')
+puts File.basename($0)
+return if File.basename($0)[/rake/]
 
 # Santiago (CL), Zurich (CH), Auckland (NZ), Sydney (AU), Londres (UK), Georgia (USA)
 cities = [
