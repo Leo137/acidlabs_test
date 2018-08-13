@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicacion obtiene el clima de 6 ciudades utilizando la API de DarkSky y despliega la hora local y temperatura para cada una de ellas.
 
-Things you may want to cover:
+La informacion de las ciudades es almacenada en Redis, en la llave `cities`. Los campos rescatados por la API son guardados en llaves redis con el formato `cities/<lattitude>/<longitude>/<key>`. Los errores al consultar la api son guardadas en un hash llamado `api.errors`.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Para incluir mas ciudades, modificar  `config/initializers/city_configuration.rb` y reiniciar aplicación.
